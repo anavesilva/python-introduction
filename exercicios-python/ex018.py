@@ -1,9 +1,6 @@
 # Sen, cos e tan
 import math
-an = float(input('Digite um angulo:'))
-sen = math.sin(an)
-cos = math.cos(an)
-tan = math.tan(an)
-print('O angulo de {} tem o sen de {}'.format(an, sen))
-print('O angulo de {} tem o cos de {}'.format(an, cos))
-print('O angulo de {} tem a tan de {}'.format(an, tan))
+an = math.radians(float(input('Digite um angulo:')))
+print('O angulo de {} tem o sen de {:.2f}'.format(an, math.sin(an)))
+print('O angulo de {} tem o cos de {:.2f}'.format(an, math.cos(an)))
+print('O angulo de {} tem a tan de {:.2f}'.format(an, math.tan(an)))
