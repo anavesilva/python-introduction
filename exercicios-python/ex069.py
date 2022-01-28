@@ -5,11 +5,16 @@ conthmais18 = 0
 conthomes = 0
 contmmenos20 = 0
 continuar = ''
+
 while True: 
     idade = int(input('Idade: '))
-    sexo = str(input('Sexo [F/M]: ')).upper().strip()
-    continuar = str(input('Quer continuar? [S/N]')).upper().strip()
-    if idade > 18:
+    sexo = ''
+    while sexo != 'M' and sexo != 'F':
+        sexo = str(input('Sexo [F/M]: ')).upper().strip()
+    continuar = ''
+    while continuar != 'S' and continuar != 'N':
+        continuar = str(input('Quer continuar? [S/N]')).upper().strip()
+    if idade >= 18:
         conthmais18 += 1
     if sexo == 'M':
        conthomes += 1
